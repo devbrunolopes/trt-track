@@ -154,24 +154,11 @@ const LEGACY_DEFAULT_LOCATIONS = [
 function migrateList(
   items: string[] | undefined,
   defaults: string[],
-  legacyDefaults: string[]
+  _legacyDefaults: string[]
 ): string[] {
-  const legacy = new Set(
-    legacyDefaults.map((value) =>
-      value.toLocaleLowerCase("pt-BR")
-    )
-  );
-
-  const customItems = (items ?? []).filter((value) => {
-    const normalized = String(value ?? "").trim();
-
-    return (
-      normalized !== "" &&
-      !legacy.has(normalized.toLocaleLowerCase("pt-BR"))
-    );
-  });
-
-  return normalizeList(customItems, defaults);
+  // Preserva todos os itens cadastrados pelo usuário. A lista antiga é
+  // mantida apenas na assinatura para compatibilidade com as chamadas.
+  return normalizeList(items ?? [], defaults);
 }
 
 function normalizeInjections(
@@ -415,7 +402,7 @@ export const useInjectionStore =
       }),
       {
         name: "shot-track-injections",
-        version: 7,
+        version: 8,
 
         migrate: (persistedState) => {
           const state =

@@ -16,7 +16,7 @@
   --accent-strong: #FFA21A;
   --accent-deep: #C65A00;
   --accent-wash: rgba(255,133,0,.14);
-  --planned: #929292;
+  --planned: #EF4444;
   --danger: #FF8500;
   --shadow: 0 12px 30px rgba(0, 0, 0, .22);
 }
@@ -124,7 +124,7 @@ button:disabled { cursor: not-allowed; opacity: .58; }
 .calendar-date-number { line-height: 1; }
 .calendar-marks { display: flex; align-items: center; justify-content: center; gap: 4px; min-height: 7px; }
 .calendar-mark, .legend-dot { display: inline-block; width: 7px; height: 7px; flex: 0 0 7px; border-radius: 50%; }
-.calendar-mark.done, .done-dot { background: var(--accent); }
+.calendar-mark.done, .done-dot { background: #22C55E; }
 .calendar-mark.planned, .planned-dot { background: var(--planned); }
 .calendar-controls { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 13px; }
 .calendar-legend { display: flex; flex-wrap: wrap; gap: 12px; color: #C4C4C4; font-size: 11px; }

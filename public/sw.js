@@ -1,4 +1,4 @@
-const CACHE_NAME = "trt-track-v1.15.10";
+const CACHE_NAME = "trt-track-v1.15.18";
 const APP_SHELL = ["/", "/manifest.webmanifest", "/icons/trt-track-192.png", "/icons/trt-track-512.png", "/icons/trt-track-maskable-512.png"];
 
 self.addEventListener("install", (event) => {

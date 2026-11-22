@@ -312,7 +312,7 @@
   --accent-strong: #ffa21a;
   --accent-deep: #c65a00;
   --accent-wash: #ff850024;
-  --planned: #929292;
+  --planned: #ef4444;
   --danger: #ff8500;
   --shadow: 0 12px 30px #00000038;
 }
@@ -669,7 +669,7 @@ button:disabled {
 }
 
 .calendar-mark.done, .done-dot {
-  background: var(--accent);
+  background: #22c55e;
 }
 
 .calendar-mark.planned, .planned-dot {

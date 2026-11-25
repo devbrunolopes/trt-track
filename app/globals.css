@@ -148,7 +148,7 @@ button:disabled { cursor: not-allowed; opacity: .58; }
   display: inline-flex; align-items: center; min-height: 22px; padding: 0 8px; border: 1px solid #C65A00;
   border-radius: 999px; background: rgba(255,133,0,.09); color: #FFA21A; font-size: 10px; font-weight: 700;
 }
-.planned-meta { display: flex; flex-wrap: wrap; gap: 7px 12px; margin-top: 7px; color: var(--muted); font-size: 11px; }
+.planned-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; margin-top: 7px; color: var(--muted); font-size: 11px; }
 .planned-meta span { display: inline-flex; align-items: center; gap: 5px; }
 .planned-meta svg, .plan-meta-lines svg, .history-meta svg, .day-record-meta svg { flex: 0 0 auto; color: var(--accent); }
 .selected-day-list { display: flex; flex-direction: column; }
